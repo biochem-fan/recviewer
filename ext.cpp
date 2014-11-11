@@ -1,7 +1,6 @@
 #include <boost/python.hpp>
 #include <scitbx/array_family/shared.h>
 #include <scitbx/array_family/flex_types.h>
-#include <dials/array_family/scitbx_shared_and_versa.h>
 #include <cctype>
 #include <dxtbx/model/panel.h>
 #include <iostream>

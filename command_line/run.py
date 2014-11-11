@@ -1,7 +1,7 @@
 from __future__ import division
 
 from iotbx.detectors import ImageFactory
-from dials.array_family import flex
+from cctbx.array_family import flex
 from cctbx import uctbx, sgtbx
 from iotbx import ccp4_map, phil
 import recviewer
