@@ -9,6 +9,9 @@ This program is inteded to help detection and visualization of
 pathologies such as multiple-lattice, twinning, modulation, diffuse
 scattering and high background. It is also useful for education.
 
+In this 'forDIALS' branch, I am adapting codes for inclusion into 
+DIALS project.
+
 Install
 -------
 
