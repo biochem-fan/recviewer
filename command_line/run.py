@@ -1,7 +1,7 @@
 from __future__ import division
 
 from iotbx.detectors import ImageFactory
-from cctbx.array_family import flex
+from scitbx.array_family import flex
 from cctbx import uctbx, sgtbx
 from iotbx import ccp4_map, phil
 import recviewer
@@ -16,7 +16,7 @@ def fill_voxels(image, grid, cnts, S, xy, reverse_phi=False, rec_range=0.1):
     axis = image.get_goniometer().get_rotation_axis()
     osc_range = image.get_scan().get_oscillation_range()
     print " Oscillation range:", osc_range
-    angle = (osc_range[0] + osc_range[1]) / 2 / 180 * math.pi # should take the average?
+    angle = (osc_range[0] + osc_range[1]) / 2 / 180 * math.pi
     if (reverse_phi == False):
       angle *= -1
     rotated_S = S.rotate_around_origin(axis, angle)
